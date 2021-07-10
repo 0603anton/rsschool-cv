@@ -10,7 +10,7 @@ ____
 ### About Me
 ___
 
-I`m a bank manager with a great passin for programming. I dream about changing my career in a year. And do some magic with HTML,CSS and JS!
+I`m a bank manager with a great passion for programming. I dream about changing my career in a year. And do some magic with HTML,CSS and JS!
 
 
 ### Skills
