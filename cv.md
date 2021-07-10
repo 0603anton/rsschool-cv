@@ -34,3 +34,14 @@ let positiveSum = arr => {
   return sum;
 }
 ````
+### Experience and Education
+----------
+* The Complete 2021 Web Development Bootcamp - Udemy
+* Interface development: layout and JavaScript - Coursera
+* REBOOT. Java School - Sberbank Corporate University
+* Freecodecamp.org - online course
+* learn.javascript.ru - online course
+
+### Level of English
+____
+English B1 - Intermediate
