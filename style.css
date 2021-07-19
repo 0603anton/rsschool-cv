@@ -19,13 +19,13 @@ html {
 body {
     font-size: 1.6rem;
     line-height: 1.7;
-    
+
     text-align: center;
     margin: 0 auto;
 }
 
 header {
-    background-color:#1e3f77;
+    background-color: #1e3f77;
 }
 
 .wrapper {
@@ -36,11 +36,10 @@ header {
     justify-content: space-between; */
 }
 
-nav {
-
-}
+nav {}
 
 .navbar {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -52,7 +51,61 @@ nav {
 
 .nav-link {
     text-decoration: none;
-    color: black;
     display: inline-block;
     padding: 0 2rem;
+    color: white;
+    font-size: large;
+}
+
+.photo-main {
+    max-width: 20%;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+.name-photo {
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.name {
+    padding: 5% 0 2% 0;
+
+    font-size: 200%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.3fr;
+    grid-template-rows: 0.7fr 1.1fr 1.2fr;
+    gap: 10px 15px;
+    grid-auto-flow: row dense;
+    grid-template-areas:
+        ". Contacts"
+        "About-Me Experience-and-Education"
+        "Code-Example Skills";
+}
+
+.Contacts {
+    grid-area: Contacts;
+    text-align: left;
+}
+
+.About-Me {
+    grid-area: About-Me;
+}
+
+.Experience-and-Education {
+    grid-area: Experience-and-Education;
+}
+
+.Code-Example {
+    grid-area: Code-Example;
+}
+
+.Skills {
+    grid-area: Skills;
 }
