@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Anton Kucherov</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -34,7 +35,7 @@
 
     </header>
     </div>
-    <main>
+    <main class="wrapper">
         <div class="container">
             <div class="Contacts">
                 <h2>Contacts</h2>
@@ -44,14 +45,60 @@
                     <li>Email: zogzb@gmail.com</li>
                 </ul>
             </div>
-            <div class="About-Me"></div>
-            <div class="Experience-and-Education"></div>
-            <div class="Code-Example"></div>
-            <div class="Skills"></div>
+            <div class="About-Me">
+                <h2>About Me</h2>
+                <p>I`m a bank manager with a great passion for programming. I dream about changing my career in a year.
+                    And do some magic with HTML,CSS and JS!</p>
+            </div>
+            <div class="Experience-and-Education">
+                <h2>Experience and Education</h2>
+                <ul>
+                    <li>The Complete 2021 Web Development Bootcamp - Udemy</li>
+                    <li>Interface development: layout and JavaScript - Coursera</li>
+                    <li>Freecodecamp.org - online course</li>
+                    <li>learn.javascript.ru - online course</li>
+                </ul>
+            </div>
+            <div class="Code-Example">
+                <h2>Code Example</h2>
+                <pre>
+                    <code>
+                        let positiveSum = arr => {
+                            let sum = 0;
+                            for ( let i =0; i < arr.length; i++) {
+                            if (arr[i] > 0) {
+                            sum = sum + arr[i];
+                            } else if (arr[i] === undefined || arr[i] == 0) {
+                            sum = sum + 0;
+                            }
+                        }
+                            return sum;
+                        }
+                    </code>
+                </pre>
+            </div>
+            <div class="Skills">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <h2>Level of English</h2>
+                <ul>
+                    <li>English B1 - Intermediate</li>
+                </ul>
+            </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="wrapper">
+        <hr>
+        <h3>2021</h3>
+        <div class="footer-icon">
+            <a href="https://github.com/0603anton"><i class="fab fa-github fa-4x"></i></a>
+            <a href="https://rs.school/js/"><img class="logo-rss" src="https://rs.school/images/rs_school_js.svg" alt="logo"></a>
+            
+        </div>
     </footer>
 </body>
 

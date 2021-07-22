@@ -27,16 +27,14 @@ body {
 header {
     background-color: #1e3f77;
 }
+h2{
+    text-align: center;
+}
 
 .wrapper {
     max-width: 144rem;
     margin: 0 auto;
-    /* display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between; */
 }
-
-nav {}
 
 .navbar {
 
@@ -46,8 +44,6 @@ nav {}
     list-style-type: none;
 
 }
-
-.nav-item {}
 
 .nav-link {
     text-decoration: none;
@@ -80,9 +76,9 @@ nav {}
 .container {
     display: grid;
     grid-template-columns: 0.8fr 1.3fr;
-    grid-template-rows: 0.7fr 1.1fr 1.2fr;
-    gap: 10px 15px;
-    grid-auto-flow: row dense;
+    grid-template-rows:  0.6fr 0.6fr; 
+    gap: 5rem 10rem;
+    grid-auto-flow: dense;
     grid-template-areas:
         ". Contacts"
         "About-Me Experience-and-Education"
@@ -96,16 +92,35 @@ nav {}
 
 .About-Me {
     grid-area: About-Me;
+    padding: 0 10rem 0 10rem;
 }
 
 .Experience-and-Education {
     grid-area: Experience-and-Education;
+    text-align: left;
 }
 
 .Code-Example {
     grid-area: Code-Example;
+    text-align: left;
 }
 
 .Skills {
     grid-area: Skills;
+    text-align: left;
+}
+
+.logo-rss {
+    max-width: 10rem;
+    flex-shrink: 0;
+}
+
+.logo-rss svg {
+    max-width: 10rem;
+
+    width: 100%
+}
+
+.footer-icon a {
+    padding: 2rem;
 }
