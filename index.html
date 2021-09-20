@@ -2,109 +2,249 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Anton Kucherov</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Anton Kucherov | Front-End Developer</title>
 </head>
 
 <body>
+  <!-- HEADER -->
+  <header id="header-home">
+    <div class="container">
+      <nav id="main-nav">
+        <img src="img/logo_gray.png" alt="My Portfolio" id="logo">
+        <ul>
+          <li><a href="#about-a">About</a></li>
+          <li><a href="#contact-b">Contacts</a></li>
+          <li><a href="#about-b">Skills</a></li>
+          <li><a href="#code-example">Code Example and Projects</a></li>
+          <li><a href="#experience">Experience and Education</a></li>
+          <li><a href="#contact-c">Level of English</a></li>
+        </ul>
+      </nav>
 
-    <header>
-        <div class="wrapper">
-            <nav>
-                <ul class="navbar">
-                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#code">Code example</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#experience">Experience and Education</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#eng">Level of English</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
-                </ul>
-            </nav>
-            <div class="name-photo">
-                <img class="photo-main" src="https://avatars.githubusercontent.com/u/72902514?v=4" alt="photo">
-                <div class="name">
-                    <h1>Anton Kucherov</h1>
-                    <h2>web-developer</h2>
-                </div>
-            </div>
+      <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+          <div></div>
         </div>
-    </header>
+        <div class="menu">
+          <div>
+            <div>
+              <ul>
+                <li><a href="#about-a">About</a></li>
+                <li><a href="#contact-b">Contacts</a></li>
+                <li><a href="#about-b">Skills</a></li>
+                <li><a href="#code-example">Code Example and Projects</a></li>
+                <li><a href="#experience">Experience and Education</a></li>
+                <li><a href="#contact-c">Level of English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <main class="wrapper">
-        <div class="container">
-            <div class="Contacts" id="contacts">
-                <h2>Contacts</h2>
-                <ul>
-                    <li>Telegram: @Anton_kucherov</li>
-                    <li>Discord: 0603Anton#0073</li>
-                    <li>Email: zogzb@gmail.com</li>
-                </ul>
-            </div>
-            <div class="About-Me" id="about">
-                <section>
-                    <h2>About Me</h2>
-                    <p>I`m a bank manager with a great passion for programming. I dream about changing my career in a
-                        year.
-                        And do some magic with HTML,CSS and JS!</p>
-                </section>
-            </div>
-            <div class="Experience-and-Education" id="experience">
-                <h2>Experience and Education</h2>
-                <ul>
-                    <li>The Complete 2021 Web Development Bootcamp - Udemy</li>
-                    <li>Interface development: layout and JavaScript - Coursera</li>
-                    <li>Freecodecamp.org - online course</li>
-                    <li>learn.javascript.ru - online course</li>
-                </ul>
-            </div>
-            <div class="Code-Example" id="code">
-                <h2>Code Example</h2>
-                <pre>
-                    <code>
-                        let positiveSum = arr => {
-                            let sum = 0;
-                            for (let i = 0; i &lt; arr.length; i++) {
-                                if (arr[i] > 0) {
-                                    sum = sum + arr[i];
-                                } else if (arr[i] === undefined || arr[i] == 0) {
-                                    sum = sum + 0;
-                                }
-                            }
-                            return sum;
+      <div class="header-content">
+        <h1>I am Anton Kucherov The <span class="txt-type" data-wait="3000"
+            data-words='["Front-End Developer", "Programmer", "Web Developer"]'></span></h1>
+        <p class="lead">I specialize in HTML, CSS and JavaScript. </p>
+        <a href="" class="btn-light">View More</a>
+      </div>
+    </div>
+  </header>
+
+
+  <section id="about-a" class="text-center py-3">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">
+        Let me tell you a little about myself and what I do...
+      </p>
+      <div class="about-info">
+        <img src="img/about.jpg" alt="" class="bio-image" />
+        <div class="bio bg-light">
+          <h3>My story</h3>
+          <p>
+            I am 31 years old, I work as a branch manager in a bank. I think that I have burned out at my current job
+            and
+            this will lead me to some stagnation. I really need something new where I could develop during my life.
+            That's
+            why I'm here. I found my new passion in programming. My goal is to
+            gain knowledge in the field of front-end development.
+          </p>
+          <div class="Experience-and-Education" id="experience">
+            <h3>Experience and Education</h3>
+            <ul>
+              <li>The Complete 2021 Web Development Bootcamp - Udemy</li>
+              <li>Interface development: layout and JavaScript - Coursera</li>
+              <li>Freecodecamp.org - online course</li>
+              <li>learn.javascript.ru - online course</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section B: Progress Bars -->
+  <section id="about-b" class="bg-dark py-3">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="bottom-line"></div>
+
+      <h4>HTML & CSS:</h4>
+      <div class="progress">
+        <div style="width:90%"></div>
+      </div>
+      <h4>Wordpress:</h4>
+      <div class="progress">
+        <div style="width:80%"></div>
+      </div>
+      <h4>JavaScript:</h4>
+      <div class="progress">
+        <div style="width:70%"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="code-example" class="text-center py-1">
+    <div class="container">
+      <h2 class="section-title">Code Example</h2>
+      <div class="bottom-line"></div>
+      <pre><code class="JavaScript">
+let positiveSum = arr => {
+                    let sum = 0;
+                    for (let i = 0; i &lt; arr.length; i++) {
+                        if (arr[i] > 0) {
+                            sum = sum + arr[i];
+                        } else if (arr[i] === undefined || arr[i] == 0) {
+                            sum = sum + 0;
                         }
-                    </code>
-                </pre>
-            </div>
-            <div class="Skills" id="skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <h2 id="eng">Level of English</h2>
-                <ul>
-                    <li>English B1 - Intermediate</li>
-                </ul>
-            </div>
-        </div>
-    </main>
-    <footer class="wrapper">
-        <hr>
-        <h3>2021</h3>
-        <div class="footer-icon">
-            <a href="https://github.com/0603anton"><i class="fab fa-github fa-4x"></i></a>
-            <a href="https://rs.school/js/"><img class="logo-rss" src="https://rs.school/images/rs_school_js.svg"
-                    alt="logo"></a>
+                    }
+                    return sum;
+                }
+      </code></pre>
+    </div>
+  </section>
 
+  <!-- Section A: Gallery -->
+  <section id="work-a" class="text-center py-2">
+    <div class="container">
+      <h2 class="section-title">My Work</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">
+        Check out some of my projects
+      </p>
+      <div class="items">
+        <a href="https://0603anton.github.io/front-end-mentors-projects/">
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item1.png" alt="portfolio component" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Small project for testing my layout Skills</p>
+                <h2 class="item-text-title">HTML and CSS</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://0603anton.github.io/Portfolio-Bootstrap/">
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item2.png" alt="landing page" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Small project for testing my layout Skills with Bootstrap</p>
+                <h2 class="item-text-title">HTML and CSS</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="https://0603anton.github.io/Portfolio-Wildlife/">
+          <div class="item">
+            <div class="item-image">
+              <img src="img/items/item3.png" alt="" />
+            </div>
+            <div class="item-text">
+              <div class="item-text-wrap">
+                <p class="item-text-category">Small project for testing my layout Skills</p>
+                <h2 class="item-text-title">HTML and CSS</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact-b" class="py-3 bg-dark">
+    <div class="container">
+      <div class="contact-info">
+        <div>
+          <i class="fas fa-envelope fa-2x"></i>
+          <h3>Email</h3>
+          <p>zorgzb@gmail.com</p>
         </div>
-    </footer>
+        <div>
+          <i class="fas fa-phone fa-2x"></i>
+          <h3>Phone</h3>
+          <p>(555) 555-5555</p>
+        </div>
+        <div>
+          <i class="fab fa-telegram fa-2x"></i>
+          <h3>Telegram</h3>
+          <p>@Anton_kucherov</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="contact-c" class="bg-main py-4">
+    <div class="container">
+      <h2>Level of English</h2>
+      <p>My level of English is B1 (I have some speaking practice, but not with native speakers).</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <p>Copyright &copy; 2021. All Rights Reserved</p>
+
+      <a href="https://rs.school/js/"><img class="logo-rss" src="https://rs.school/images/rs_school_js.svg"
+          alt="logo"></a>
+      <div class="social">
+        <a href="https://github.com/0603anton"><i class="fab fa-telegram"></i></a>
+        <a href="https://github.com/0603anton"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/0603anton"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/0603anton"><i class="fab fa-google"></i></a>
+
+      </div>
+    </div>
+  </footer>
+  <script src="js/typewriter.js"></script>
 </body>
 
 </html>
